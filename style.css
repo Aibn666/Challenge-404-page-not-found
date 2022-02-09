@@ -1,0 +1,101 @@
+html{
+    height: 100%;
+}
+
+body{
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background-attachment: fixed;
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+}
+
+.logo-404{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 15vmin;
+    width: 50vmin;
+    
+}
+
+@media(max-width:480px) and (min-width:320px){
+    .logo-404{
+        top: 60vmin;
+    }
+}
+
+.title{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 5vmin;
+    margin-top: 53vmin;
+}
+@media(max-width:480px) and (min-width:320px){
+    .title{
+        margin-top: 95vmin;
+    }
+}
+
+.btn-back{
+    border: 1px solid black;
+    color: black;
+    height: 5vmin;
+    padding: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn-back:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+@media(max-width:480px)and(min-width:320px){
+    .btn-back{
+        font-size: 3.5vmin;
+    }
+}
+
+.subtitle{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 3.5vmin;
+    margin-top: -1vmin;
+    margin-bottom: 9vmin;
+}
+.zombie{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30vmin;
+    left: 25vmin;
+    width: 15vmin;
+    animation: floating 3s infinite ease-in-out;
+}
+@media(max-width:480px) and (min-width:320px){
+    .zombie{
+        top:45vmin;
+        left: 42vmin;
+    }
+}
+@keyframes floating{
+    form{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(15px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+.info{
+    margin-top: 40px;
+}
